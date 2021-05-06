@@ -23,7 +23,7 @@
 								alt=""
 							/>
 							<div class="p-3">
-								<nuxt-link :to="`blog/${post.slug}`">{{ post.title }}</nuxt-link>
+								<nuxt-link :to="{name:'blog-slug', params:{slug:post.slug}}">{{ post.title }}</nuxt-link>
 								<p>{{ post.description }}</p>
 							</div>
 						</li>
